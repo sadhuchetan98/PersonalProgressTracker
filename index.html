@@ -12,8 +12,6 @@
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
         }
-        /* This is the core of the fix. We only define the closed state and the transition. */
-        /* The open state's height is now handled by JavaScript to ensure it's always the perfect size. */
         .accordion-content {
             max-height: 0;
             overflow: hidden;
@@ -140,10 +138,10 @@
                 title: "Python Mastery & Essential Tooling",
                 dates: "July 28 - August 24, 2025",
                 weeks: [
-                    { week: 1, dates: "July 28 - Aug 3", focus: "Python Fundamentals & Git Mastery", goal: ["Write clean Python scripts.", "Be comfortable with the basic Git workflow.", "Solve 10-15 LeetCode Easy Array/String problems."] },
-                    { week: 2, dates: "Aug 4 - Aug 10", focus: "Python OOP, Modules & Intro to Docker", goal: ["Write modular, class-based Python code.", "Successfully build a Docker image for a Python app.", "Solve 10-15 LeetCode Easy/Medium problems."] },
-                    { week: 3, dates: "Aug 11 - Aug 17", focus: "Python Data Structures & File I/O", goal: ["Confidently use lists, dicts, sets, tuples, and comprehensions.", "Master error handling (try/except) and file I/O (JSON, CSV).", "Solve 10-15 LeetCode Easy/Medium problems on Linked Lists, Stacks, Queues."] },
-                    { week: 4, dates: "Aug 18 - Aug 24", focus: "NumPy, Pandas & Project 1", goal: ["PROJECT 1: A Python script that uses Pandas to read and analyze a CSV, performs calculations with NumPy, and handles errors gracefully.", "The entire project must be Dockerized and pushed to GitHub."] }
+                    { week: 1, dates: "July 28 - Aug 3", focus: "Python Fundamentals & Git Mastery", goal: ["Write clean Python scripts.", "Be comfortable with the basic Git workflow.", "Solve 10-15 LeetCode Easy Array/String problems."], resources: [{name: "Official Python Tutorial", url: "https://docs.python.org/3/tutorial/"}, {name: "Pro Git Book", url: "https://git-scm.com/book/en/v2"}, {name: "LeetCode", url: "https://leetcode.com/problemset/all/"}] },
+                    { week: 2, dates: "Aug 4 - Aug 10", focus: "Python OOP, Modules & Intro to Docker", goal: ["Write modular, class-based Python code.", "Successfully build a Docker image for a Python app.", "Solve 10-15 LeetCode Easy/Medium problems."], resources: [{name: "Real Python: OOP in Python 3", url: "https://realpython.com/python3-object-oriented-programming/"}, {name: "Docker Get Started", url: "https://docs.docker.com/get-started/"}] },
+                    { week: 3, dates: "Aug 11 - Aug 17", focus: "Python Data Structures & File I/O", goal: ["Confidently use lists, dicts, sets, tuples, and comprehensions.", "Master error handling (try/except) and file I/O (JSON, CSV).", "Solve 10-15 LeetCode Easy/Medium problems on Linked Lists, Stacks, Queues."], resources: [{name: "Python Data Structures (Official Docs)", url: "https://docs.python.org/3/tutorial/datastructures.html"}, {name: "Reading and Writing Files in Python", url: "https://realpython.com/read-write-files-python/"}] },
+                    { week: 4, dates: "Aug 18 - Aug 24", focus: "NumPy, Pandas & Project 1", goal: ["PROJECT 1: A Python script that uses Pandas to read and analyze a CSV, performs calculations with NumPy, and handles errors gracefully.", "The entire project must be Dockerized and pushed to GitHub."], resources: [{name: "NumPy: The absolute basics for beginners", url: "https://numpy.org/doc/stable/user/absolute_beginners.html"}, {name: "Pandas: 10 minutes to pandas", url: "https://pandas.pydata.org/docs/user_guide/10min.html"}] }
                 ]
             },
             {
@@ -151,10 +149,10 @@
                 title: "Azure AI Core & First Gen-AI App",
                 dates: "August 25 - September 21, 2025",
                 weeks: [
-                    { week: 5, dates: "Aug 25 - Aug 31", focus: "Azure AI Fundamentals & DSA Trees", goal: ["Go through the AI-900 Learning Path on Microsoft Learn for concepts, but SKIP the exam.", "Set up your Azure account and deploy your first Azure OpenAI model (e.g., gpt-35-turbo).", "Make API calls to Azure OpenAI via the Python SDK.", "Solve 5-7 LeetCode Medium Tree problems (Binary Trees, BSTs)."] },
-                    { week: 6, dates: "Sep 1 - Sep 7", focus: "Prompt Engineering & DSA Graphs", goal: ["Complete DeepLearning.AI's 'Prompt Engineering for Developers.'", "Practice techniques like few-shot, chain-of-thought, and defining output structure.", "Master prompt engineering fundamentals.", "Solve 5-7 LeetCode Medium Graph problems (BFS, DFS)."] },
-                    { week: 7, dates: "Sep 8 - Sep 14", focus: "Project 2 & System Design Intro", goal: ["PROJECT 2: Build a simple 'AI Brainstorming Partner' console app that takes a topic and generates ideas, outlines, and summaries using advanced prompting.", "Dockerize Project 2 and push to GitHub.", "Start weekly System Design practice: Whiteboard a basic Gen-AI app architecture."] },
-                    { week: 8, dates: "Sep 15 - Sep 21", focus: "AI-102 Prep & Advanced DSA", goal: ["Begin the AI-102 (Azure AI Engineer) learning path.", "Focus on Azure AI Search, Azure ML, and content moderation services.", "Cover ~30% of AI-102 content.", "Consolidate DSA knowledge with mixed Medium problems."] }
+                    { week: 5, dates: "Aug 25 - Aug 31", focus: "Azure AI Fundamentals & DSA Trees", goal: ["Go through the AI-900 Learning Path on Microsoft Learn for concepts, but SKIP the exam.", "Set up your Azure account and deploy your first Azure OpenAI model (e.g., gpt-35-turbo).", "Make API calls to Azure OpenAI via the Python SDK.", "Solve 5-7 LeetCode Medium Tree problems (Binary Trees, BSTs)."], resources: [{name: "MS Learn: AI-900 Azure AI Fundamentals", url: "https://docs.microsoft.com/en-us/learn/paths/azure-ai-fundamentals/"}, {name: "Azure OpenAI Service Quickstart", url: "https://docs.microsoft.com/en-us/azure/cognitive-services/openai/quickstart"}] },
+                    { week: 6, dates: "Sep 1 - Sep 7", focus: "Prompt Engineering & DSA Graphs", goal: ["Complete DeepLearning.AI's 'Prompt Engineering for Developers.'", "Practice techniques like few-shot, chain-of-thought, and defining output structure.", "Master prompt engineering fundamentals.", "Solve 5-7 LeetCode Medium Graph problems (BFS, DFS)."], resources: [{name: "DeepLearning.AI: Prompt Engineering for Developers", url: "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"}, {name: "Azure's Intro to Prompt Engineering", url: "https://docs.microsoft.com/en-us/azure/cognitive-services/openai/how-to/prompt-engineering"}] },
+                    { week: 7, dates: "Sep 8 - Sep 14", focus: "Project 2 & System Design Intro", goal: ["PROJECT 2: Build a simple 'AI Brainstorming Partner' console app that takes a topic and generates ideas, outlines, and summaries using advanced prompting.", "Dockerize Project 2 and push to GitHub.", "Start weekly System Design practice: Whiteboard a basic Gen-AI app architecture."], resources: [{name: "Grokking the System Design Interview", url: "https://www.educative.io/courses/grokking-the-system-design-interview"}, {name: "System Design Primer on GitHub", url: "https://github.com/donnemartin/system-design-primer"}] },
+                    { week: 8, dates: "Sep 15 - Sep 21", focus: "AI-102 Prep & Advanced DSA", goal: ["Begin the AI-102 (Azure AI Engineer) learning path.", "Focus on Azure AI Search, Azure ML, and content moderation services.", "Cover ~30% of AI-102 content.", "Consolidate DSA knowledge with mixed Medium problems."], resources: [{name: "MS Learn: AI-102 Designing and Implementing an Azure AI Solution", url: "https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml/"}] }
                 ]
             },
             {
@@ -162,21 +160,21 @@
                 title: "Enterprise RAG & Azure AI Engineer Cert",
                 dates: "September 22 - October 19, 2025",
                 weeks: [
-                    { week: 9, dates: "Sep 22 - Sep 28", focus: "AI-102 Deep Dive & RAG Theory", goal: ["Continue intense AI-102 study.", "Deep dive into RAG theory: chunking strategies, embeddings (Ada-002), and vector databases (Azure AI Search).", "Cover 70% of AI-102 content.", "Understand the end-to-end RAG pipeline conceptually."] },
-                    { week: 10, dates: "Sep 29 - Oct 5", focus: "AI-102 Certification & RAG Implementation", goal: ["Final prep and pass the AI-102 exam.", "Begin implementing a RAG pipeline: load documents, chunk them, generate embeddings, and store in Azure AI Search.", "AI-102 Certified!", "Have a working data ingestion pipeline for RAG."] },
-                    { week: 11, dates: "Oct 6 - Oct 12", focus: "Project 3: RAG Chatbot", goal: ["PROJECT 3: Build a RAG chatbot that answers questions from a specific set of documents (e.g., your resume, a technical manual).", "Project 3 MVP completed.", "The core RAG flow (retrieve -> augment prompt -> generate) is working."] },
-                    { week: 12, dates: "Oct 13 - Oct 19", focus: "Project 3 Enhancement: Evaluation & Metrics", goal: ["Integrate an evaluation framework like RAGAS.", "Measure your chatbot's performance on metrics like Faithfulness and Answer Relevancy.", "Update your Project 3 README on GitHub with a detailed 'Evaluation' section, showing your metrics and findings. This is a huge differentiator."] }
+                    { week: 9, dates: "Sep 22 - Sep 28", focus: "AI-102 Deep Dive & RAG Theory", goal: ["Continue intense AI-102 study.", "Deep dive into RAG theory: chunking strategies, embeddings (Ada-002), and vector databases (Azure AI Search).", "Cover 70% of AI-102 content.", "Understand the end-to-end RAG pipeline conceptually."], resources: [{name: "Azure AI Search Documentation", url: "https://docs.microsoft.com/en-us/azure/search/"}, {name: "Pinecone: What is RAG?", url: "https://www.pinecone.io/learn/retrieval-augmented-generation/"}] },
+                    { week: 10, dates: "Sep 29 - Oct 5", focus: "AI-102 Certification & RAG Implementation", goal: ["Final prep and pass the AI-102 exam.", "Begin implementing a RAG pipeline: load documents, chunk them, generate embeddings, and store in Azure AI Search.", "AI-102 Certified!", "Have a working data ingestion pipeline for RAG."], resources: [{name: "Official AI-102 Exam Page", url: "https://docs.microsoft.com/en-us/learn/certifications/exams/ai-102"}] },
+                    { week: 11, dates: "Oct 6 - Oct 12", focus: "Project 3: RAG Chatbot", goal: ["PROJECT 3: Build a RAG chatbot that answers questions from a specific set of documents (e.g., your resume, a technical manual).", "Project 3 MVP completed.", "The core RAG flow (retrieve -> augment prompt -> generate) is working."], resources: [{name: "Azure Samples: Chat with your own data", url: "https://github.com/Azure-Samples/azure-search-openai-demo"}, {name: "LangChain RAG Docs", url: "https://python.langchain.com/docs/use_cases/question_answering/"}] },
+                    { week: 12, dates: "Oct 13 - Oct 19", focus: "Project 3 Enhancement: Evaluation & Metrics", goal: ["Integrate an evaluation framework like RAGAS.", "Measure your chatbot's performance on metrics like Faithfulness and Answer Relevancy.", "Update your Project 3 README on GitHub with a detailed 'Evaluation' section, showing your metrics and findings. This is a huge differentiator."], resources: [{name: "RAGAS Framework Documentation", url: "https://docs.ragas.io/"}] }
                 ]
             },
             {
                 month: 4,
                 title: "Agentic AI & Production Deployment",
                 dates: "October 20 - November 16, 2025",
-                 weeks: [
-                    { week: 13, dates: "Oct 20 - Oct 26", focus: "LangChain/Semantic Kernel & Agent Theory", goal: ["Learn an agentic framework (LangChain is popular).", "Understand how to give LLMs 'tools' (APIs, functions) to interact with the outside world.", "Build a simple agent that can use a calculator or a weather API."] },
-                    { week: 14, dates: "Oct 27 - Nov 2", focus: "Project 4: Agentic Application", goal: ["PROJECT 4: Build a 'Research Assistant' agent.", "The user gives it a topic, and the agent uses a search API (e.g., Bing Search) to find information, then uses the LLM to summarize it.", "Project 4 MVP on GitHub."] },
-                    { week: 15, dates: "Nov 3 - Nov 9", focus: "MLOps: Deployment with AKS/ACA", goal: ["Learn to deploy a containerized AI application (like your Project 2 or 3) to Azure Kubernetes Service (AKS) or Azure Container Apps (ACA).", "Understand basic CI/CD concepts.", "Have a live, publicly accessible endpoint for one of your projects. This is a critical, high-value skill."] },
-                    { week: 16, dates: "Nov 10 - Nov 16", focus: "Project 5: Polishing for Production", goal: ["PROJECT 5: Choose your best project (RAG or Agent) and productionize it.", "Add robust logging, error handling, a cost-analysis section in the README, and a simple UI using Streamlit.", "A polished, well-documented, and potentially live project that serves as the centerpiece of your portfolio."] }
+                weeks: [
+                    { week: 13, dates: "Oct 20 - Oct 26", focus: "LangChain/Semantic Kernel & Agent Theory", goal: ["Learn an agentic framework (LangChain is popular).", "Understand how to give LLMs 'tools' (APIs, functions) to interact with the outside world.", "Build a simple agent that can use a calculator or a weather API."], resources: [{name: "LangChain Agents Documentation", url: "https://python.langchain.com/docs/modules/agents/"}, {name: "Microsoft Semantic Kernel Docs", url: "https://docs.microsoft.com/en-us/semantic-kernel/overview/"}] },
+                    { week: 14, dates: "Oct 27 - Nov 2", focus: "Project 4: Agentic Application", goal: ["PROJECT 4: Build a 'Research Assistant' agent.", "The user gives it a topic, and the agent uses a search API (e.g., Bing Search) to find information, then uses the LLM to summarize it.", "Project 4 MVP on GitHub."], resources: [{name: "LangChain Agent Tutorials", url: "https://python.langchain.com/docs/use_cases/agents/"}] },
+                    { week: 15, dates: "Nov 3 - Nov 9", focus: "MLOps: Deployment with AKS/ACA", goal: ["Learn to deploy a containerized AI application (like your Project 2 or 3) to Azure Kubernetes Service (AKS) or Azure Container Apps (ACA).", "Understand basic CI/CD concepts.", "Have a live, publicly accessible endpoint for one of your projects. This is a critical, high-value skill."], resources: [{name: "Deploy to Azure Kubernetes Service (AKS)", url: "https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-application"}, {name: "Deploy to Azure Container Apps (ACA)", url: "https://docs.microsoft.com/en-us/azure/container-apps/get-started"}] },
+                    { week: 16, dates: "Nov 10 - Nov 16", focus: "Project 5: Polishing for Production", goal: ["PROJECT 5: Choose your best project (RAG or Agent) and productionize it.", "Add robust logging, error handling, a cost-analysis section in the README, and a simple UI using Streamlit.", "A polished, well-documented, and potentially live project that serves as the centerpiece of your portfolio."], resources: [{name: "Streamlit Documentation", url: "https://docs.streamlit.io/"}] }
                 ]
             },
              {
@@ -184,10 +182,10 @@
                 title: "Intense Interview Preparation",
                 dates: "November 17 - December 14, 2025",
                 weeks: [
-                    { week: 17, dates: "Nov 17 - Nov 23", focus: "Resume, Portfolio & Applications", goal: ["Optimize your Resume and Linkedin for Gen-AI roles.", "Write compelling project descriptions.", "Start applying to 5-10 remote roles daily.", "Goal: 30-50 high-quality applications sent."] },
-                    { week: 18, dates: "Nov 24 - Nov 30", focus: "Gen-AI & Project Deep Dive", goal: ["Practice explaining your projects—the 'why' behind your design choices, the trade-offs, the challenges.", "Master explaining RAG, Agents, and evaluation metrics.", "Be able to give a 15-minute 'TED Talk' on each of your projects."] },
-                    { week: 19, dates: "Dec 1 - Dec 7", focus: "DSA & System Design Grind", goal: ["Intense practice of LeetCode Medium/Hard.", "Whiteboard AI system design questions daily (e.g., 'Design Twitter's timeline generation,' 'Design a scalable content moderation system').", "Confidently solve unseen DSA problems and articulate complex system designs."] },
-                    { week: 20, dates: "Dec 8 - Dec 14", focus: "Mock Interviews", goal: ["Conduct mock interviews on platforms like Pramp or with peers.", "Record yourself and analyze your performance.", "Complete 3-5 full mock interviews (technical + behavioral) and incorporate feedback."] }
+                    { week: 17, dates: "Nov 17 - Nov 23", focus: "Resume, Portfolio & Applications", goal: ["Optimize your Resume and Linkedin for Gen-AI roles.", "Write compelling project descriptions.", "Start applying to 5-10 remote roles daily.", "Goal: 30-50 high-quality applications sent."], resources: [] },
+                    { week: 18, dates: "Nov 24 - Nov 30", focus: "Gen-AI & Project Deep Dive", goal: ["Practice explaining your projects—the 'why' behind your design choices, the trade-offs, the challenges.", "Master explaining RAG, Agents, and evaluation metrics.", "Be able to give a 15-minute 'TED Talk' on each of your projects."], resources: [] },
+                    { week: 19, dates: "Dec 1 - Dec 7", focus: "DSA & System Design Grind", goal: ["Intense practice of LeetCode Medium/Hard.", "Whiteboard AI system design questions daily (e.g., 'Design Twitter's timeline generation,' 'Design a scalable content moderation system').", "Confidently solve unseen DSA problems and articulate complex system designs."], resources: [{name: "LeetCode Blind 75 List", url: "https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions"}] },
+                    { week: 20, dates: "Dec 8 - Dec 14", focus: "Mock Interviews", goal: ["Conduct mock interviews on platforms like Pramp or with peers.", "Record yourself and analyze your performance.", "Complete 3-5 full mock interviews (technical + behavioral) and incorporate feedback."], resources: [{name: "Pramp - Free Mock Interviews", url: "https://www.pramp.com/"}] }
                 ]
             },
             {
@@ -195,9 +193,9 @@
                 title: "Interviews, Offers & Negotiation",
                 dates: "December 15, 2025 - January 19, 2026",
                 weeks: [
-                    { week: 21, dates: "Dec 15 - Dec 28", focus: "Active Interviewing", goal: ["Real interviews are your priority.", "Continue light prep to stay sharp.", "Rest and manage your energy.", "Navigate multiple interview rounds with confidence."] },
-                    { week: 22, dates: "Dec 29, 2025 - Jan 11, 2026", focus: "Offer Evaluation & Negotiation", goal: ["Evaluate offers based on salary, role, culture, and growth.", "Prepare your negotiation strategy.", "Secure multiple offers to create leverage."] },
-                    { week: 23, dates: "Jan 12 - Jan 19", focus: "Decision Time", goal: ["Make your final decision and sign the offer.", "Accept a remote Azure-based Gen-AI Engineer role at 50+ LPA."] }
+                    { week: 21, dates: "Dec 15 - Dec 28", focus: "Active Interviewing", goal: ["Real interviews are your priority.", "Continue light prep to stay sharp.", "Rest and manage your energy.", "Navigate multiple interview rounds with confidence."], resources: [] },
+                    { week: 22, dates: "Dec 29, 2025 - Jan 11, 2026", focus: "Offer Evaluation & Negotiation", goal: ["Evaluate offers based on salary, role, culture, and growth.", "Prepare your negotiation strategy.", "Secure multiple offers to create leverage."], resources: [{name: "Levels.fyi Negotiation", url: "https://www.levels.fyi/services/"}, {name: "Holloway Guide to Equity Compensation", url: "https://www.holloway.com/g/equity-compensation"}] },
+                    { week: 23, dates: "Jan 12 - Jan 19", focus: "Decision Time", goal: ["Make your final decision and sign the offer.", "Accept a remote Azure-based Gen-AI Engineer role at 50+ LPA."], resources: [] }
                 ]
             }
         ];
@@ -287,6 +285,17 @@
                     const isCurrentWeek = week.week === currentWeekNum;
 
                     const goalHtml = `<ul class="list-disc list-inside mt-2 space-y-1 text-gray-700 ${isCompleted ? 'completed-task' : ''}">${week.goal.map(g => `<li>${g}</li>`).join('')}</ul>`;
+                    
+                    let resourcesHtml = '';
+                    if (week.resources && week.resources.length > 0) {
+                        resourcesHtml = `
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                            <h4 class="text-sm font-semibold text-gray-600 mb-2">Learning Resources</h4>
+                            <ul class="space-y-1">
+                                ${week.resources.map(r => `<li><a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm"><i class="fas fa-link fa-xs mr-2"></i>${r.name}</a></li>`).join('')}
+                            </ul>
+                        </div>`;
+                    }
 
                     const weekDiv = document.createElement('div');
                     weekDiv.className = `border-t py-6 ${isCurrentWeek ? 'current-week p-4 -mx-4' : ''}`;
@@ -304,6 +313,7 @@
                                 </label>
                             </div>
                         </div>
+                        ${resourcesHtml}
                         <div class="mt-4">
                             <label for="notes-${week.week}" class="block text-sm font-medium text-gray-700 mb-1">My Notes</label>
                             <textarea id="notes-${week.week}" rows="3" class="notes-textarea w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none">${state.notes[weekKey] || ''}</textarea>
@@ -334,7 +344,6 @@
         }
 
         // --- EVENT LISTENERS ---
-        // This is the new, unified handler for all accordions.
         function handleAccordionClick(e) {
             const button = e.target.closest('.accordion-button');
             if (button) {
