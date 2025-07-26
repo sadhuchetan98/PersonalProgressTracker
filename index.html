@@ -12,17 +12,17 @@
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
         }
+        /* This is the core of the fix. We only define the closed state and the transition. */
+        /* The open state's height is now handled by JavaScript to ensure it's always the perfect size. */
         .accordion-content {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease-out;
         }
-        .accordion-content.open {
-             max-height: 1000px; /* Set a large enough value */
-        }
         .current-week {
             border: 2px solid #3b82f6;
             box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+            border-radius: 0.5rem;
         }
         .completed-task, .completed-task li {
             text-decoration: line-through;
@@ -35,11 +35,11 @@
             border-color: #3b82f6;
             box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
         }
-        .accordion-button i {
-            transition: transform 0.3s ease;
-        }
         .accordion-button.open i {
             transform: rotate(180deg);
+        }
+        .accordion-button i {
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
@@ -209,7 +209,6 @@
             const savedState = localStorage.getItem('genAiPlanTrackerState');
             if (savedState) {
                 state = JSON.parse(savedState);
-                 // Data migration: ensure all keys from planData exist in state
                 let stateUpdated = false;
                 planData.forEach(month => {
                     month.weeks.forEach(week => {
@@ -252,20 +251,10 @@
             const diffTime = Math.abs(now - startDate);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
             
-            // This logic maps day number to the correct week item index in the plan
-            if (diffDays <= 91) return Math.ceil(diffDays / 7); // Weeks 1-13
-            if (diffDays <= 98) return 14; // Week 14
-            if (diffDays <= 105) return 15; // Week 15
-            if (diffDays <= 112) return 16; // Week 16
-            if (diffDays <= 119) return 17; // Week 17
-            if (diffDays <= 126) return 18; // Week 18
-            if (diffDays <= 133) return 19; // Week 19
-            if (diffDays <= 140) return 20; // Week 20
-            if (diffDays <= 154) return 21; // Week 21 (2 weeks long)
-            if (diffDays <= 168) return 22; // Week 22 (2 weeks long)
-            if (diffDays > 168) return 23; // Week 23
-            
-            return Math.ceil(diffDays / 7); // Fallback
+            if (diffDays <= 140) return Math.ceil(diffDays / 7);
+            if (diffDays <= 154) return 21;
+            if (diffDays <= 168) return 22;
+            return 23;
         }
         
         function renderPlan() {
@@ -286,7 +275,7 @@
                             <p class="text-sm text-gray-500">${month.dates}</p>
                         </div>
                     </div>
-                    <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                    <i class="fas fa-chevron-down"></i>
                 `;
 
                 const content = document.createElement('div');
@@ -300,7 +289,7 @@
                     const goalHtml = `<ul class="list-disc list-inside mt-2 space-y-1 text-gray-700 ${isCompleted ? 'completed-task' : ''}">${week.goal.map(g => `<li>${g}</li>`).join('')}</ul>`;
 
                     const weekDiv = document.createElement('div');
-                    weekDiv.className = `border-t py-6 ${isCurrentWeek ? 'current-week rounded-lg my-4 p-4 -mx-4' : ''}`;
+                    weekDiv.className = `border-t py-6 ${isCurrentWeek ? 'current-week p-4 -mx-4' : ''}`;
                     weekDiv.innerHTML = `
                         <div class="flex justify-between items-start">
                             <div class="flex-grow">
@@ -328,8 +317,8 @@
                 planContainer.appendChild(monthDiv);
 
                 if (month.weeks.some(w => w.week === currentWeekNum)) {
-                    content.classList.add('open');
                     button.classList.add('open');
+                    content.style.maxHeight = content.scrollHeight + "px";
                 }
             });
             updateProgressBar();
@@ -345,12 +334,17 @@
         }
 
         // --- EVENT LISTENERS ---
+        // This is the new, unified handler for all accordions.
         function handleAccordionClick(e) {
             const button = e.target.closest('.accordion-button');
             if (button) {
                 button.classList.toggle('open');
                 const content = button.nextElementSibling;
-                content.classList.toggle('open');
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
             }
         }
 
