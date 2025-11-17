@@ -3,396 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generative AI Engineer - 6-Month Plan Tracker</title>
+    <title>Power Up Your App: A 5-Step Quick Start to Okta's New Features</title>
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load Google Font 'Inter' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Apply the Inter font family */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
-        }
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-out;
-        }
-        .current-week {
-            border: 2px solid #3b82f6;
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
-            border-radius: 0.5rem;
-        }
-        .completed-task, .completed-task li {
-            text-decoration: line-through;
-            color: #6b7280;
-        }
-        .notes-textarea {
-            transition: all 0.3s ease;
-        }
-        .notes-textarea:focus {
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-        }
-        .accordion-button.open i {
-            transform: rotate(180deg);
-        }
-        .accordion-button i {
-            transition: transform 0.3s ease;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 p-4 sm:p-6 lg:p-8">
+<body class="bg-gray-100 leading-relaxed">
 
-    <div class="max-w-7xl mx-auto">
-        <!-- Header Section -->
-        <header class="bg-white shadow-md rounded-xl p-6 mb-8">
-            <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">Your 6-Month Sprint to Become an Azure-based Generative AI Engineer</h1>
-            <p class="text-gray-600 mt-2">Target: 50+ LPA Remote Job by January 2026</p>
+    <!-- Main Content Container -->
+    <div class="max-w-3xl mx-auto p-4 sm:p-8 bg-white shadow-xl rounded-lg my-8 sm:my-12">
+        
+        <!-- Article Header -->
+        <header class="border-b pb-6 mb-6">
+            <!-- Title -->
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                Power Up Your App's Authentication: A 5-Step Quick Start to Okta's New Core Features
+            </h1>
             
-            <!-- Overall Progress Bar -->
-            <div class="mt-6">
-                <div class="flex justify-between items-center mb-1">
-                    <span class="text-base font-medium text-blue-700">Overall Progress</span>
-                    <span id="progress-percentage" class="text-sm font-medium text-blue-700">0%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-4">
-                    <div id="progress-bar" class="bg-blue-600 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
+            <!-- Metadata -->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm text-gray-500">
+                <p class="mb-2 sm:mb-0">
+                    By: <strong>Chetankumar Sadhu (141541)</strong>
+                </p>
+                <div class="flex flex-wrap space-x-2">
+                    <span class="bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-xs font-medium mt-1">Digital Engineering</span>
+                    <span class="bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mt-1">Cloud</span>
+                    <span class="bg-red-100 text-red-800 rounded-full px-3 py-1 text-xs font-medium mt-1">Security</span>
                 </div>
             </div>
         </header>
 
-        <!-- Reference Sections -->
-        <div id="reference-sections" class="space-y-4 mb-8">
-            <!-- Mentorship Philosophy -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-                <button class="accordion-button w-full p-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100">
-                    <h2 class="text-lg font-semibold text-gray-800">I. Mentorship Philosophy & Core Principles</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content px-6 pb-5">
-                    <ul class="list-disc list-inside space-y-2 mt-4 text-gray-700">
-                        <li><b>Learn by Building & Evaluating:</b> Prioritize hands-on coding and project building. Crucially, learn to evaluate your work with industry-standard metrics.</li>
-                        <li><b>MVP to Production:</b> Build small, functional components, then iterate with a focus on making them robust, scalable, and cost-effective.</li>
-                        <li><b>Impact-Driven Focus:</b> Concentrate on skills employers value most: Azure OpenAI, RAG, Agents, Evaluation Frameworks (RAGAS), and MLOps (Docker, Kubernetes).</li>
-                        <li><b>System Design as a Theme:</b> Integrate system design thinking from the beginning. Every project is an opportunity to think about scalability, cost, and maintainability.</li>
-                        <li><b>Consistency is Key:</b> Daily, focused effort is more effective than sporadic long sessions.</li>
-                        <li><b>Optimize for Remote:</b> All projects must be showcase-ready on GitHub, demonstrating autonomous, production-level work.</li>
-                        <li><b>Leverage Existing Skills:</b> Your .NET and Azure background is a massive head start.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Daily Rhythm -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-                <button class="accordion-button w-full p-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100">
-                    <h2 class="text-lg font-semibold text-gray-800">II. Your Daily & Weekly Rhythm</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content px-6 pb-5">
-                    <div class="mt-4 text-gray-700 space-y-3">
-                        <p><b>Target:</b> ~4-5 hours daily</p>
-                        <p><b>Morning (Post-Gym, approx. 12:00 PM - 2:30 PM IST):</b> 2-2.5 hours of focused "deep work." New Python concepts, complex library practice, or challenging system design problems.</p>
-                        <p><b>Afternoon (Before Work, approx. 3:00 PM - 5:00 PM IST):</b> 1.5-2 hours for project implementation, reviewing concepts, or quick coding exercises.</p>
-                        <p><b>Weekends (Saturdays & Sundays):</b> Your Power Hours! Dedicate large blocks (6-8+ hours) to extensive project building, deep-diving into MLOps, and rigorous DSA practice.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Personal Brand -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-                <button class="accordion-button w-full p-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100">
-                    <h2 class="text-lg font-semibold text-gray-800">IV. Personal Brand: From "Learner" to "Builder"</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content px-6 pb-5">
-                    <ul class="list-disc list-inside space-y-3 mt-4 text-gray-700">
-                        <li><b>Linkedin Headline:</b> "Generative AI Engineer | Building LLM-powered Solutions on Azure | Python | .NET | AI-102 Certified"</li>
-                        <li><b>GitHub:</b> Your GitHub is your resume. Every project README must be pristine, including architecture diagrams, setup instructions, and the crucial Evaluation/Cost-Analysis sections.</li>
-                        <li><b>Content Strategy:</b> Don't just post "I learned X." Write detailed "Project Autopsies."
-                            <ul class="list-disc list-inside ml-6 mt-1">
-                                <li><b>Structure:</b> 1) The Problem, 2) My Solution & Architecture, 3) A Major Hurdle, 4) How I Solved It, 5) Key Metrics & Learnings.</li>
-                                <li>This demonstrates deep thinking and problem-solving, not just coding.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Blog Post Image -->
+        <div class="my-8">
+            <!-- This is a permanent placeholder image that will work on your local machine. -->
+            <img src="https://placehold.co/1000x500/0a1931/7DF9FF?text=Authentication+Quick+Start" 
+                 alt="Okta 5-Step Integrator Plan" 
+                 class="w-full h-auto rounded-lg shadow-md object-cover">
         </div>
 
-        <!-- Main Content: Plan Tracker -->
-        <main id="plan-container" class="space-y-6">
-            <!-- Months will be dynamically inserted here -->
-        </main>
-
-        <!-- Footer -->
-        <footer class="text-center mt-12 text-gray-500">
-            <p>Good luck. Your dedication will determine your success.</p>
-        </footer>
-    </div>
-
-    <script>
-        // --- DATA ---
-        const planData = [
-            {
-                month: 1,
-                title: "Python Mastery & Essential Tooling",
-                dates: "July 28 - August 24, 2025",
-                weeks: [
-                    { week: 1, dates: "July 28 - Aug 3", focus: "Python Fundamentals & Git Mastery", goal: ["Write clean Python scripts.", "Be comfortable with the basic Git workflow.", "Solve 10-15 LeetCode Easy Array/String problems."], resources: [{name: "Official Python Tutorial", url: "https://docs.python.org/3/tutorial/"}, {name: "Pro Git Book", url: "https://git-scm.com/book/en/v2"}, {name: "LeetCode", url: "https://leetcode.com/problemset/all/"}] },
-                    { week: 2, dates: "Aug 4 - Aug 10", focus: "Python OOP, Modules & Intro to Docker", goal: ["Write modular, class-based Python code.", "Successfully build a Docker image for a Python app.", "Solve 10-15 LeetCode Easy/Medium problems."], resources: [{name: "Real Python: OOP in Python 3", url: "https://realpython.com/python3-object-oriented-programming/"}, {name: "Docker Get Started", url: "https://docs.docker.com/get-started/"}] },
-                    { week: 3, dates: "Aug 11 - Aug 17", focus: "Python Data Structures & File I/O", goal: ["Confidently use lists, dicts, sets, tuples, and comprehensions.", "Master error handling (try/except) and file I/O (JSON, CSV).", "Solve 10-15 LeetCode Easy/Medium problems on Linked Lists, Stacks, Queues."], resources: [{name: "Python Data Structures (Official Docs)", url: "https://docs.python.org/3/tutorial/datastructures.html"}, {name: "Reading and Writing Files in Python", url: "https://realpython.com/read-write-files-python/"}] },
-                    { week: 4, dates: "Aug 18 - Aug 24", focus: "NumPy, Pandas & Project 1", goal: ["PROJECT 1: A Python script that uses Pandas to read and analyze a CSV, performs calculations with NumPy, and handles errors gracefully.", "The entire project must be Dockerized and pushed to GitHub."], resources: [{name: "NumPy: The absolute basics for beginners", url: "https://numpy.org/doc/stable/user/absolute_beginners.html"}, {name: "Pandas: 10 minutes to pandas", url: "https://pandas.pydata.org/docs/user_guide/10min.html"}] }
-                ]
-            },
-            {
-                month: 2,
-                title: "Azure AI Core & First Gen-AI App",
-                dates: "August 25 - September 21, 2025",
-                weeks: [
-                    { week: 5, dates: "Aug 25 - Aug 31", focus: "Azure AI Fundamentals & DSA Trees", goal: ["Go through the AI-900 Learning Path on Microsoft Learn for concepts, but SKIP the exam.", "Set up your Azure account and deploy your first Azure OpenAI model (e.g., gpt-35-turbo).", "Make API calls to Azure OpenAI via the Python SDK.", "Solve 5-7 LeetCode Medium Tree problems (Binary Trees, BSTs)."], resources: [{name: "MS Learn: AI-900 Azure AI Fundamentals", url: "https://docs.microsoft.com/en-us/learn/paths/azure-ai-fundamentals/"}, {name: "Azure OpenAI Service Quickstart", url: "https://docs.microsoft.com/en-us/azure/cognitive-services/openai/quickstart"}] },
-                    { week: 6, dates: "Sep 1 - Sep 7", focus: "Prompt Engineering & DSA Graphs", goal: ["Complete DeepLearning.AI's 'Prompt Engineering for Developers.'", "Practice techniques like few-shot, chain-of-thought, and defining output structure.", "Master prompt engineering fundamentals.", "Solve 5-7 LeetCode Medium Graph problems (BFS, DFS)."], resources: [{name: "DeepLearning.AI: Prompt Engineering for Developers", url: "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"}, {name: "Azure's Intro to Prompt Engineering", url: "https://docs.microsoft.com/en-us/azure/cognitive-services/openai/how-to/prompt-engineering"}] },
-                    { week: 7, dates: "Sep 8 - Sep 14", focus: "Project 2 & System Design Intro", goal: ["PROJECT 2: Build a simple 'AI Brainstorming Partner' console app that takes a topic and generates ideas, outlines, and summaries using advanced prompting.", "Dockerize Project 2 and push to GitHub.", "Start weekly System Design practice: Whiteboard a basic Gen-AI app architecture."], resources: [{name: "Grokking the System Design Interview", url: "https://www.educative.io/courses/grokking-the-system-design-interview"}, {name: "System Design Primer on GitHub", url: "https://github.com/donnemartin/system-design-primer"}] },
-                    { week: 8, dates: "Sep 15 - Sep 21", focus: "AI-102 Prep & Advanced DSA", goal: ["Begin the AI-102 (Azure AI Engineer) learning path.", "Focus on Azure AI Search, Azure ML, and content moderation services.", "Cover ~30% of AI-102 content.", "Consolidate DSA knowledge with mixed Medium problems."], resources: [{name: "MS Learn: AI-102 Designing and Implementing an Azure AI Solution", url: "https://docs.microsoft.com/en-us/learn/paths/build-ai-solutions-with-azure-ml/"}] }
-                ]
-            },
-            {
-                month: 3,
-                title: "Enterprise RAG & Azure AI Engineer Cert",
-                dates: "September 22 - October 19, 2025",
-                weeks: [
-                    { week: 9, dates: "Sep 22 - Sep 28", focus: "AI-102 Deep Dive & RAG Theory", goal: ["Continue intense AI-102 study.", "Deep dive into RAG theory: chunking strategies, embeddings (Ada-002), and vector databases (Azure AI Search).", "Cover 70% of AI-102 content.", "Understand the end-to-end RAG pipeline conceptually."], resources: [{name: "Azure AI Search Documentation", url: "https://docs.microsoft.com/en-us/azure/search/"}, {name: "Pinecone: What is RAG?", url: "https://www.pinecone.io/learn/retrieval-augmented-generation/"}] },
-                    { week: 10, dates: "Sep 29 - Oct 5", focus: "AI-102 Certification & RAG Implementation", goal: ["Final prep and pass the AI-102 exam.", "Begin implementing a RAG pipeline: load documents, chunk them, generate embeddings, and store in Azure AI Search.", "AI-102 Certified!", "Have a working data ingestion pipeline for RAG."], resources: [{name: "Official AI-102 Exam Page", url: "https://docs.microsoft.com/en-us/learn/certifications/exams/ai-102"}] },
-                    { week: 11, dates: "Oct 6 - Oct 12", focus: "Project 3: RAG Chatbot", goal: ["PROJECT 3: Build a RAG chatbot that answers questions from a specific set of documents (e.g., your resume, a technical manual).", "Project 3 MVP completed.", "The core RAG flow (retrieve -> augment prompt -> generate) is working."], resources: [{name: "Azure Samples: Chat with your own data", url: "https://github.com/Azure-Samples/azure-search-openai-demo"}, {name: "LangChain RAG Docs", url: "https://python.langchain.com/docs/use_cases/question_answering/"}] },
-                    { week: 12, dates: "Oct 13 - Oct 19", focus: "Project 3 Enhancement: Evaluation & Metrics", goal: ["Integrate an evaluation framework like RAGAS.", "Measure your chatbot's performance on metrics like Faithfulness and Answer Relevancy.", "Update your Project 3 README on GitHub with a detailed 'Evaluation' section, showing your metrics and findings. This is a huge differentiator."], resources: [{name: "RAGAS Framework Documentation", url: "https://docs.ragas.io/"}] }
-                ]
-            },
-            {
-                month: 4,
-                title: "Agentic AI & Production Deployment",
-                dates: "October 20 - November 16, 2025",
-                weeks: [
-                    { week: 13, dates: "Oct 20 - Oct 26", focus: "LangChain/Semantic Kernel & Agent Theory", goal: ["Learn an agentic framework (LangChain is popular).", "Understand how to give LLMs 'tools' (APIs, functions) to interact with the outside world.", "Build a simple agent that can use a calculator or a weather API."], resources: [{name: "LangChain Agents Documentation", url: "https://python.langchain.com/docs/modules/agents/"}, {name: "Microsoft Semantic Kernel Docs", url: "https://docs.microsoft.com/en-us/semantic-kernel/overview/"}] },
-                    { week: 14, dates: "Oct 27 - Nov 2", focus: "Project 4: Agentic Application", goal: ["PROJECT 4: Build a 'Research Assistant' agent.", "The user gives it a topic, and the agent uses a search API (e.g., Bing Search) to find information, then uses the LLM to summarize it.", "Project 4 MVP on GitHub."], resources: [{name: "LangChain Agent Tutorials", url: "https://python.langchain.com/docs/use_cases/agents/"}] },
-                    { week: 15, dates: "Nov 3 - Nov 9", focus: "MLOps: Deployment with AKS/ACA", goal: ["Learn to deploy a containerized AI application (like your Project 2 or 3) to Azure Kubernetes Service (AKS) or Azure Container Apps (ACA).", "Understand basic CI/CD concepts.", "Have a live, publicly accessible endpoint for one of your projects. This is a critical, high-value skill."], resources: [{name: "Deploy to Azure Kubernetes Service (AKS)", url: "https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-application"}, {name: "Deploy to Azure Container Apps (ACA)", url: "https://docs.microsoft.com/en-us/azure/container-apps/get-started"}] },
-                    { week: 16, dates: "Nov 10 - Nov 16", focus: "Project 5: Polishing for Production", goal: ["PROJECT 5: Choose your best project (RAG or Agent) and productionize it.", "Add robust logging, error handling, a cost-analysis section in the README, and a simple UI using Streamlit.", "A polished, well-documented, and potentially live project that serves as the centerpiece of your portfolio."], resources: [{name: "Streamlit Documentation", url: "https://docs.streamlit.io/"}] }
-                ]
-            },
-             {
-                month: 5,
-                title: "Intense Interview Preparation",
-                dates: "November 17 - December 14, 2025",
-                weeks: [
-                    { week: 17, dates: "Nov 17 - Nov 23", focus: "Resume, Portfolio & Applications", goal: ["Optimize your Resume and Linkedin for Gen-AI roles.", "Write compelling project descriptions.", "Start applying to 5-10 remote roles daily.", "Goal: 30-50 high-quality applications sent."], resources: [] },
-                    { week: 18, dates: "Nov 24 - Nov 30", focus: "Gen-AI & Project Deep Dive", goal: ["Practice explaining your projects—the 'why' behind your design choices, the trade-offs, the challenges.", "Master explaining RAG, Agents, and evaluation metrics.", "Be able to give a 15-minute 'TED Talk' on each of your projects."], resources: [] },
-                    { week: 19, dates: "Dec 1 - Dec 7", focus: "DSA & System Design Grind", goal: ["Intense practice of LeetCode Medium/Hard.", "Whiteboard AI system design questions daily (e.g., 'Design Twitter's timeline generation,' 'Design a scalable content moderation system').", "Confidently solve unseen DSA problems and articulate complex system designs."], resources: [{name: "LeetCode Blind 75 List", url: "https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions"}] },
-                    { week: 20, dates: "Dec 8 - Dec 14", focus: "Mock Interviews", goal: ["Conduct mock interviews on platforms like Pramp or with peers.", "Record yourself and analyze your performance.", "Complete 3-5 full mock interviews (technical + behavioral) and incorporate feedback."], resources: [{name: "Pramp - Free Mock Interviews", url: "https://www.pramp.com/"}] }
-                ]
-            },
-            {
-                month: 6,
-                title: "Interviews, Offers & Negotiation",
-                dates: "December 15, 2025 - January 19, 2026",
-                weeks: [
-                    { week: 21, dates: "Dec 15 - Dec 28", focus: "Active Interviewing", goal: ["Real interviews are your priority.", "Continue light prep to stay sharp.", "Rest and manage your energy.", "Navigate multiple interview rounds with confidence."], resources: [] },
-                    { week: 22, dates: "Dec 29, 2025 - Jan 11, 2026", focus: "Offer Evaluation & Negotiation", goal: ["Evaluate offers based on salary, role, culture, and growth.", "Prepare your negotiation strategy.", "Secure multiple offers to create leverage."], resources: [{name: "Levels.fyi Negotiation", url: "https://www.levels.fyi/services/"}, {name: "Holloway Guide to Equity Compensation", url: "https://www.holloway.com/g/equity-compensation"}] },
-                    { week: 23, dates: "Jan 12 - Jan 19", focus: "Decision Time", goal: ["Make your final decision and sign the offer.", "Accept a remote Azure-based Gen-AI Engineer role at 50+ LPA."], resources: [] }
-                ]
-            }
-        ];
-
-        // --- STATE MANAGEMENT ---
-        let state;
-
-        function loadState() {
-            const savedState = localStorage.getItem('genAiPlanTrackerState');
-            if (savedState) {
-                state = JSON.parse(savedState);
-                let stateUpdated = false;
-                planData.forEach(month => {
-                    month.weeks.forEach(week => {
-                        const weekKey = `week-${week.week}`;
-                        if (!(weekKey in state.completed)) {
-                            state.completed[weekKey] = false;
-                            stateUpdated = true;
-                        }
-                        if (!(weekKey in state.notes)) {
-                            state.notes[weekKey] = '';
-                            stateUpdated = true;
-                        }
-                    });
-                });
-                if (stateUpdated) saveState();
-            } else {
-                state = { completed: {}, notes: {} };
-                planData.forEach(month => {
-                    month.weeks.forEach(week => {
-                        state.completed[`week-${week.week}`] = false;
-                        state.notes[`week-${week.week}`] = '';
-                    });
-                });
-            }
-        }
-
-        function saveState() {
-            localStorage.setItem('genAiPlanTrackerState', JSON.stringify(state));
-        }
-
-        // --- RENDERING & UI ---
-        const planContainer = document.getElementById('plan-container');
-        const referenceContainer = document.getElementById('reference-sections');
-
-        function getCurrentWeekNumber() {
-            const now = new Date();
-            const startDate = new Date('2025-07-28T00:00:00');
-            if (now < startDate) return 1;
+        <!-- Article Body -->
+        <article class="text-base text-gray-800 space-y-6">
             
-            const diffTime = Math.abs(now - startDate);
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            
-            if (diffDays <= 140) return Math.ceil(diffDays / 7);
-            if (diffDays <= 154) return 21;
-            if (diffDays <= 168) return 22;
-            return 23;
-        }
-        
-        function renderPlan() {
-            planContainer.innerHTML = '';
-            const currentWeekNum = getCurrentWeekNumber();
-
-            planData.forEach(month => {
-                const monthDiv = document.createElement('div');
-                monthDiv.className = 'bg-white shadow-lg rounded-xl overflow-hidden';
+            <!-- Introduction Section -->
+            <section>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4 border-b pb-2">Introduction: The End of an Era, The Start of an Integration</h2>
+                <p class="mb-4">
+                    For years, the Okta Developer Edition has been the go-to sandbox for developers, a free environment to explore and test the power of Okta's identity platform. As of mid-2025, however, that era is coming to a close.
+                </p>
+                <p class="mb-4">
+                    If you are one of the thousands of developers actively using an Okta Developer Edition org, this is a <strong>critical, time-sensitive update</strong>. Okta is officially deprecating the legacy Developer Edition service, with <strong>deactivations scheduled to begin on July 18, 2025</strong>.
+                </p>
+                <p class="mb-4">
+                    This change is not just a rebranding; it is a strategic realignment of Okta's developer program. The replacement, the new <strong>Okta Integrator Free Plan</strong>, is a purpose-built environment designed for a new era of secure, pre-production development.
+                </p>
                 
-                const button = document.createElement('button');
-                button.className = 'accordion-button w-full p-6 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition duration-300';
-                button.innerHTML = `
-                    <div class="flex items-center">
-                        <span class="text-2xl font-bold text-blue-600 mr-4">${month.month}</span>
-                        <div>
-                            <h2 class="text-xl font-semibold text-gray-800">${month.title}</h2>
-                            <p class="text-sm text-gray-500">${month.dates}</p>
-                        </div>
+                <!-- Callout Box -->
+                <blockquote class="border-l-4 border-blue-500 bg-blue-50 pl-4 pr-4 py-3 text-blue-900 my-6">
+                    <p class="font-semibold italic">
+                        <strong>The New Limit:</strong> While this new plan is <strong>limited to 10 monthly active users (MAUs)</strong>, it is not a "lite" version—it's a full-featured testbed.
+                    </p>
+                </blockquote>
+
+                <p class="mb-4">
+                    This article is your definitive guide to this transition. We will cover:
+                </p>
+                <ul class="list-disc list-inside pl-4 mb-4 space-y-2">
+                    <li>Why this change is happening.</li>
+                    <li>What features the new Integrator Free Plan includes.</li>
+                    <li>A feature-by-feature comparison.</li>
+                    <li>A high-level plan for migrating your projects.</li>
+                </ul>
+            </section>
+
+            <!-- Why the Change Section -->
+            <section>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4 border-b pb-2">Why the Change? From "Playground" to "Purpose-Built"</h2>
+                <p class="mb-4">
+                    Okta's "why" for this transition is rooted in its Secure Identity Commitment (OSIC). The legacy Developer Edition was a general-purpose environment, often described as a "playground". Over time, the lines blurred between development sandboxes and production-like workloads, creating potential security ambiguities.
+                </p>
+                <p class="mb-4">
+                    The new Integrator Free Plan rectifies this. Its terms of service explicitly state it is <strong>not for production use cases</strong>. Instead, it is a "clean, focused environment" optimized for three specific, pre-production workflows:
+                </p>
+                <ul class="list-disc list-inside pl-4 mb-4 space-y-2">
+                    <li>Testing application integrations</li>
+                    <li>Validating identity flows</li>
+                    <li>Preparing for Okta Integration Network (OIN) submission</li>
+                </ul>
+                <p>
+                    This is a positive and mature move for the developer ecosystem. It provides a full-featured sandbox that aligns with a modern, secure development lifecycle.
+                </p>
+            </section>
+
+            <!-- Features Section -->
+            <section>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4 border-b pb-2">Feature-by-Feature: What's Inside the Okta Integrator Free Plan</h2>
+                <p class="mb-4">
+                    The most significant part of this update is what developers gain access to. Despite the 10-user limit, Okta is providing a full-featured testbed with some of its most powerful enterprise-grade tools.
+                </p>
+                <p class="mb-4">
+                    Your new Integrator Free Plan org comes provisioned with:
+                </p>
+                <ul class="list-disc list-inside pl-4 mb-4 space-y-3">
+                    <li><strong>Single Sign-On (SSO):</strong> The core of Okta's platform. Build and test SSO integrations using modern standards like OpenID Connect (OIDC) and SAML.</li>
+                    <li><strong>Universal Directory (UD):</strong> A flexible, cloud-based user store to manage and profile your 10 test users.</li>
+                    <li><strong>Adaptive Multi-Factor Authentication (AMFA):</strong> The ability to test and build robust, risk-based authentication policies—a critical component for enterprise-grade security.</li>
+                    <li><strong>Lifecycle Management (LCM):</strong> Test automated user provisioning and de-provisioning (SCIM), which is essential for B2B and enterprise integrations.</li>
+                    <li><strong>API Access Management (API AM):</strong> This is a critical inclusion. You get Okta's full-powered OAuth 2.0-as-a-Service, allowing you to create and manage custom authorization servers, define custom scopes, and secure your own APIs.</li>
+                    <li><strong>Okta Workflows:</strong> A powerful, low-code automation platform to orchestrate identity processes.</li>
+                </ul>
+
+                <!-- Callout Box -->
+                <blockquote class="border-l-4 border-blue-500 bg-blue-50 pl-4 pr-4 py-3 text-blue-900 my-6">
+                    <p class="font-semibold italic">
+                        <strong>The Key Takeaway:</strong> Okta is giving developers the entire toolbox but limiting the scale. You can build with the same powerful APIs and tools that run in Okta's largest enterprise production environments, all within a secure, pre-production context.
+                    </p>
+                </blockquote>
+            </section>
+
+            <!-- Comparison Table Section -->
+            <section>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4 border-b pb-2">At a Glance: Developer Edition vs. Integrator Free Plan</h2>
+                <p class="mb-6">
+                    For developers needing a quick comparison, here is the high-level breakdown of the changes.
+                </p>
+                
+                <!-- Responsive Table Wrapper -->
+                <div class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Capability
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Okta Developer Edition (Legacy)
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Okta Integrator Free Plan (New)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Status</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">Deprecated (Deactivation begins July 18, 2025)</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">Active & Default (As of May 22, 2025)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Core Use Case</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">General-purpose "playground"</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">Purpose-built for pre-production integration testing</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Production Use</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">Ambiguous, but strongly discouraged</td>
+                                <td class="px-6 py-4 text-sm text-gray-700"><strong>Explicitly forbidden by terms of service</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">User Limit</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">Varies; "up to 10 active Users" or 15k MAU for older plans</td>
+                                <td class="px-6 py-4 text-sm text-gray-700"><strong>"up to 10 monthly active users (MAUs)"</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Key Features</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">Basic SSO and API access</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">SSO, UD, <strong>Adaptive MFA</strong>, <strong>Lifecycle Management (LCM)</strong>, <strong>API Access Management (API AM)</strong>, <strong>Workflows</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">OIN Submission</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">No longer accepted (as of May 22, 2025)</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">Required for all new OIN submissions</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Migration Plan Section -->
+            <section>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4 border-b pb-2">A Developer's 5-Step Migration Plan</h2>
+                <p class="mb-6">
+                    Because the new Integrator Free Plan org is a "clean slate," there is no direct automated migration. You will need to <strong>manually replicate your setup</strong>. Here is a high-level, 5-step path to get started:
+                </p>
+
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Step 1: Sign Up for Your New Integrator Free Plan Org</h3>
+                        <p>Your first step is to visit the Okta Developer portal and sign up for a new Integrator Free Plan organization. This process is streamlined and will provision your new, full-featured sandbox.</p>
                     </div>
-                    <i class="fas fa-chevron-down"></i>
-                `;
 
-                const content = document.createElement('div');
-                content.className = 'accordion-content px-6 pb-2';
-                
-                month.weeks.forEach(week => {
-                    const weekKey = `week-${week.week}`;
-                    const isCompleted = state.completed[weekKey];
-                    const isCurrentWeek = week.week === currentWeekNum;
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Step 2: Re-Create Your Application Integrations</h3>
+                        <p class="mb-4">Your primary use case is likely adding authentication to an application.</p>
+                        <ol class="list-decimal list-inside pl-4 mb-4 space-y-2">
+                            <li>In your new org's Admin Console, navigate to <strong>Applications > Applications</strong>.</li>
+                            <li>Select "Create App Integration."</li>
+                            <li>For most modern web (SPA, server-side) and mobile apps, you will select <strong>OIDC - OpenID Connect</strong> as the sign-in method.</li>
+                        </ol>
+                        <p class="mb-4">You will then be given a Client ID and Client Secret. Your application's configuration file will look something like this:</p>
+                        
+                        <!-- Code Block -->
+                        <pre class="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto"><code class="font-mono text-sm">[Okta]
+Issuer = https://your-new-org-name.okta.com/oauth2/default
+ClientId = YourNewClientId
+ClientSecret = YourNewSecret (if a confidential client)</code></pre>
+                    </div>
 
-                    const goalHtml = `<ul class="list-disc list-inside mt-2 space-y-1 text-gray-700 ${isCompleted ? 'completed-task' : ''}">${week.goal.map(g => `<li>${g}</li>`).join('')}</ul>`;
-                    
-                    let resourcesHtml = '';
-                    if (week.resources && week.resources.length > 0) {
-                        resourcesHtml = `
-                        <div class="mt-4 pt-4 border-t border-gray-200">
-                            <h4 class="text-sm font-semibold text-gray-600 mb-2">Learning Resources</h4>
-                            <ul class="space-y-1">
-                                ${week.resources.map(r => `<li><a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm"><i class="fas fa-link fa-xs mr-2"></i>${r.name}</a></li>`).join('')}
-                            </ul>
-                        </div>`;
-                    }
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Step 3: Secure Your First API with API Access Management</h3>
+                        <p class="mb-4">This is where the power of the new plan shines. If your application has its own backend API, you can secure it by:</p>
+                        <ol class="list-decimal list-inside pl-4 mb-4 space-y-2">
+                            <li>Navigating to <strong>Security > API</strong> in the Admin Console.</li>
+                            <li>Creating a new <strong>Custom Authorization Server</strong>.</li>
+                            <li>Defining <strong>Scopes</strong> (e.g., <code class="text-sm bg-gray-200 text-gray-800 px-1 py-0.5 rounded">read:my_data</code>) and <strong>Claims</strong> for your API.</li>
+                            <li>Creating an <strong>Access Policy</strong> to govern who can request tokens for your API.</li>
+                        </ol>
+                    </div>
 
-                    const weekDiv = document.createElement('div');
-                    weekDiv.className = `border-t py-6 ${isCurrentWeek ? 'current-week p-4 -mx-4' : ''}`;
-                    weekDiv.innerHTML = `
-                        <div class="flex justify-between items-start">
-                            <div class="flex-grow">
-                                <h3 class="font-bold text-lg ${isCompleted ? 'completed-task' : ''}">Week ${week.week}: ${week.focus}</h3>
-                                <p class="text-sm text-gray-500 mb-2">${week.dates}</p>
-                                ${goalHtml}
-                            </div>
-                            <div class="ml-4 flex-shrink-0">
-                                <label for="week-${week.week}" class="flex items-center cursor-pointer">
-                                    <input type="checkbox" id="week-${week.week}" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" ${isCompleted ? 'checked' : ''}>
-                                    <span class="ml-2 text-sm font-medium text-gray-700">Done</span>
-                                </label>
-                            </div>
-                        </div>
-                        ${resourcesHtml}
-                        <div class="mt-4">
-                            <label for="notes-${week.week}" class="block text-sm font-medium text-gray-700 mb-1">My Notes</label>
-                            <textarea id="notes-${week.week}" rows="3" class="notes-textarea w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none">${state.notes[weekKey] || ''}</textarea>
-                        </div>
-                    `;
-                    content.appendChild(weekDiv);
-                });
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Step 4: Explore the SDKs and Tools</h3>
+                        <p class="mb-4">Okta abstracts the complexity of OIDC and SAML via a comprehensive set of SDKs. Whatever your stack, there is a tool to help:</p>
+                        <ul class="list-disc list-inside pl-4 mb-4 space-y-2">
+                            <li><strong>Web Apps (SPA):</strong> Use <code class="text-sm bg-gray-200 text-gray-800 px-1 py-0.5 rounded">@okta/okta-auth-js</code> or its wrappers for React, Angular, and Vue.</li>
+                            <li><strong>Mobile Apps:</strong> Use the Okta Mobile SDKs for Swift (iOS) and Kotlin (Android).</li>
+                            <li><strong>Backend/M2M:</strong> Use the Okta Management SDKs (available for .NET, Java, Python, Go, Node.js) to manage users, groups, and other resources via Okta's core APIs.</li>
+                        </ul>
+                    </div>
 
-                monthDiv.appendChild(button);
-                monthDiv.appendChild(content);
-                planContainer.appendChild(monthDiv);
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Step 5: Plan and Execute Your Migration</h3>
+                        <p class="mb-4">Review your legacy Developer Edition org and and document all critical configurations:</p>
+                         <ul class="list-disc list-inside pl-4 mb-4 space-y-2">
+                            <li>Application integrations and their settings.</li>
+                            <li>User and group structures.</li>
+                            <li>Custom policies, rules, and brand customizations.</li>
+                        </ul>
+                        <p>You must replicate these settings in your new Integrator Free Plan org before the <strong>July 18, 2025 deactivation</strong>.</p>
+                    </div>
+                </div>
+            </section>
 
-                if (month.weeks.some(w => w.week === currentWeekNum)) {
-                    button.classList.add('open');
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-            updateProgressBar();
-        }
+            <!-- Conclusion Section -->
+            <section class="border-t pt-6 mt-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Conclusion: A Secure Foundation for a Complex World</h2>
+                <p class="mb-4">
+                    The transition from the Okta Developer Edition to the new Integrator Free Plan is a strategic and positive step for the developer community. It provides a free, secure, and fully-featured environment purpose-built for the pre-production phase of your development lifecycle.
+                </p>
+                <p>
+                    While the migration requires action, the result is a cleaner, safer, and more powerful platform for building the next generation of secure applications.
+                </p>
+            </section>
+        </article>
 
-        function updateProgressBar() {
-            const totalTasks = Object.keys(state.completed).length;
-            const completedTasks = Object.values(state.completed).filter(Boolean).length;
-            const percentage = totalTasks > 0 ? Math.round((completedTasks / totalTasks) * 100) : 0;
+    </div><!-- /Main Content Container -->
 
-            document.getElementById('progress-bar').style.width = `${percentage}%`;
-            document.getElementById('progress-percentage').textContent = `${percentage}%`;
-        }
-
-        // --- EVENT LISTENERS ---
-        function handleAccordionClick(e) {
-            const button = e.target.closest('.accordion-button');
-            if (button) {
-                button.classList.toggle('open');
-                const content = button.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            }
-        }
-
-        referenceContainer.addEventListener('click', handleAccordionClick);
-        planContainer.addEventListener('click', function(e) {
-            handleAccordionClick(e);
-
-            if (e.target.type === 'checkbox') {
-                const weekId = e.target.id;
-                state.completed[weekId] = e.target.checked;
-                const weekDiv = e.target.closest('.border-t');
-                const taskList = weekDiv.querySelector('ul');
-                const taskHeader = weekDiv.querySelector('h3');
-                if (e.target.checked) {
-                    taskList.classList.add('completed-task');
-                    taskHeader.classList.add('completed-task');
-                } else {
-                    taskList.classList.remove('completed-task');
-                    taskHeader.classList.remove('completed-task');
-                }
-                updateProgressBar();
-                saveState();
-            }
-        });
-
-        planContainer.addEventListener('input', function(e) {
-            if (e.target.tagName === 'TEXTAREA') {
-                const notesId = e.target.id.replace('notes-', 'week-');
-                state.notes[notesId] = e.target.value;
-                saveState();
-            }
-        });
-
-        // --- INITIALIZATION ---
-        window.onload = function() {
-            loadState();
-            renderPlan();
-        };
-
-    </script>
 </body>
 </html>
